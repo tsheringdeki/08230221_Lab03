@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Education Journey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="education-page">
+  <header>
+    <h1>🎓 My Education Journey 🎓</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="mode-toggle">☀️ Light Mode</button>
+  </header>
+
+  <section class="education">
+    <h2>From Childhood to College</h2>
+    <p>
+      My education journey has been full of experiences, values, and growth.  
+      Every school I attended shaped me in different ways — giving me knowledge, discipline, and dreams.  
+      Here’s how my path unfolded:
+    </p>
+
+    <div class="edu-grid">
+      <div class="edu-card" onclick="alert('I began my education journey at Samdrup Jongkhar Primary School, where I studied from PP to class 5. This school laid the foundation of my learning and helped me build strong values of discipline and teamwork. It was here that I learned to read, write, and explore creativity through play and simple classroom activities. SJPS created a nurturing environment that motivated me to be curious, hardworking, and respectful toward teachers and friends. The vibrant school atmosphere encouraged me to participate in different activities, shaping the early stage of my academic life.')">
+        <img src="sjps_logo.jpg" alt="Samdrup Jongkhar PS">
+        <p>Samdrup Jongkhar Primary School (PP – 5)</p>
+      </div>
+
+      <div class="edu-card" onclick="alert('From class 6 to 8, I studied at Samdrup Jongkhar Middle Secondary School. This phase of my education was where I started exploring subjects in more depth, including science, mathematics, and social studies. The school gave me opportunities to participate in cultural programs, sports, and leadership activities. It helped me grow more confident and responsible as a student. My teachers at SJMSS encouraged me to set higher goals, and my classmates inspired me through collaboration and teamwork. These three years were crucial in strengthening both my academic skills and personal growth.')">
+        <img src="sjmss_logo.jpg" alt="Samdrup Jongkhar MSS">
+        <p>Samdrup Jongkhar MSS (6 – 8)</p>
+      </div>
+
+      <div class="edu-card" onclick="alert('My secondary journey continued at Jigme Sherubling Central School, where I studied from class 9 till 12. JSCS was an inspiring place that offered not only strong academic programs but also extracurricular activities that shaped my character. Here, I learned the importance of discipline, perseverance, and leadership. The school environment was filled with inspiration from dedicated teachers and talented peers. I grew both academically and socially, preparing myself for future challenges. Though I later repeated class 12 in another school, JSCS will always remain a special part of my educational foundation.')">
+        <img src="jscs_logo.png" alt="Jigme Sherubling Central School">
+        <p>Jigme Sherubling Central School (9 – 12)</p>
+      </div>
+
+      <div class="edu-card" onclick="alert('After completing class 12 at Jigme Sherubling, I repeated my class 12 at Kelki Higher Secondary School. This experience taught me resilience and determination, reminding me that success requires hard work and persistence. Kelki gave me the chance to refine my knowledge, especially in core subjects that prepared me for higher education. The school encouraged independent learning and personal responsibility, helping me strengthen not just my academics but also my confidence. The supportive environment and guidance from teachers allowed me to overcome challenges and continue pursuing my goals.')">
+        <img src="kelki_logo.png" alt="Kelki HSS">
+        <p>Kelki Higher Secondary School (Repeat 12)</p>
+      </div>
+
+      <div class="edu-card" onclick="alert('Currently, I am pursuing my higher studies at Samtse College of Education. This institution is helping me grow into a future teacher, equipping me with the skills and values necessary to inspire and educate the next generation. At SCE, I am learning not only about teaching methodologies but also about empathy, leadership, and innovation in education. The college provides opportunities for research, collaboration, and professional growth, ensuring that I am ready to contribute meaningfully to society. My journey at SCE represents the continuation of my dreams and my commitment to shaping the future.')">
+        <img src="sce_logo.png" alt="Samtse College of Education">
+        <p>Samtse College of Education</p>
+      </div>
+    </div>
+  </section>
+  
+  <div id="edu-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
