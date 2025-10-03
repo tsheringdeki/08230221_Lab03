@@ -1,0 +1,438 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #f9d29d, #ffd6e8);
+  color: #333;
+  line-height: 1.5;
+  text-align: center; /* Center all headings and main text by default */
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffe4e1;
+}
+
+/* Sections */
+section {
+  padding: 40px;
+  min-height: 100vh;  /* taller than viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 2em;
+  color: #ff758c;
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 800px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* Home */
+.home {
+  padding-top: 80px;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  margin-top: 20px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-me img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ff7eb3;
+  flex-shrink: 0;
+}
+
+.about-me div {
+  text-align: left;
+}
+
+.about-me h2 {
+  color: #ff758c;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+/* Education */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.edu-card {
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  background: #ffe4e1;
+}
+
+.edu-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.gallery-item {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(255, 117, 140, 0.3);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery-item p {
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center; /* center skill cards */
+  text-align: justify;
+}
+
+.skill {
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-8px);
+  background: #ffe4e1;
+}
+
+/* Projects */
+.project-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  text-align: justify;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background: #fff5f8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #ff758c;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ff4d6d;
+}
+
+/* Contact */
+.contact p {
+  font-size: 1.1em;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.contact a {
+  color: #ff758c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #ffc0cb;
+  padding: 15px;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9em;
+  position: relative;
+  width: 100%;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .about-me {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-me div {
+    text-align: center;
+  }
+
+  .about-me img {
+    margin-bottom: 20px;
+  }
+
+  .edu-grid {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+
+
+/* ADDED FOR LAB 03 */
+
+
+/* Mode Toggle and DateTime Container */
+#mode-date-container {
+    position: absolute;
+    top: 5px; /* Adjust as needed */
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.9em;
+    color: white;
+    z-index: 1001;
+}
+
+#datetime-display {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#mode-toggle {
+    background: white;
+    color: #ff758c;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#mode-toggle:hover {
+    background: #ffe4e1;
+}
+
+/* Night Mode Styles */
+body.night-mode {
+    background: #2c3e50; /* Dark background */
+    color: #ecf0f1; /* Light text */
+}
+
+body.night-mode header {
+    background: #34495e; /* Darker header */
+}
+
+body.night-mode header h1, body.night-mode nav a {
+    color: #bdc3c7; /* Lighter text color */
+}
+
+body.night-mode nav a:hover {
+    color: #f39c12; /* Accent hover */
+}
+
+body.night-mode section h2, 
+body.night-mode section p, 
+body.night-mode .contact p,
+body.night-mode .contact a {
+    color: #ecf0f1; /* Ensure section and contact text is light */
+}
+body.night-mode .contact a {
+    color: #f39c12; /* Accent color for links */
+}
+
+/* Make cards and containers dark */
+body.night-mode .about-me,
+body.night-mode .edu-card,
+body.night-mode .skill,
+body.night-mode .project-card,
+body.night-mode .gallery-item {
+    background: #34495e;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.night-mode .about-me h2,
+body.night-mode .edu-card h3,
+body.night-mode .skill h3,
+body.night-mode .project-card h3 {
+    color: #f39c12; /* Accent color for headers in cards */
+}
+
+body.night-mode .edu-card:hover,
+body.night-mode .skill:hover,
+body.night-mode .project-card:hover {
+    background: #4a637a;
+}
+
+body.night-mode footer {
+    background: #34495e;
+    color: #bdc3c7;
+}
+
+body.night-mode .social-icons img {
+    filter: invert(0.8); /* Adjust social icons for dark background */
+}
+
+/* Specific button styles for night mode */
+body.night-mode .btn {
+    background: #f39c12;
+    color: #2c3e50;
+}
+
+/* Responsive adjustment for the toggle/date container */
+@media (max-width: 600px) {
+    #mode-date-container {
+        position: static;
+        margin: 10px auto 0;
+        align-items: center;
+    }
+}
+
